@@ -6,7 +6,6 @@ import "./contacto.css";
 
 
 const Contacto = () => {
-    const mostrarAlerta = () => { }
     const { register, formState: { errors }, handleSubmit } = useForm("");
     const onSubmit = (data) => {
         console.log(data);
