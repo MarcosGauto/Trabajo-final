@@ -1,6 +1,25 @@
 import React from "react";
 import "./Home.css";
 import Intro from "../../imagen/playa3.jpg"
+import { useState } from "react"
+import DateRangePicker from "tw-daterange"
+
+const ReservaHome = () => {
+    const [range, setRange] = useState({
+    startDate: new Date(),
+    endDate: new Date(),
+    })
+
+        return (
+    <   DateRangePicker
+        initialRange={range}
+        onUpdate={(dateRange) => {
+        setRange(dateRange)
+        }}
+    />
+    )
+}
+
 
 
 const Home = () => {
@@ -14,11 +33,11 @@ const Home = () => {
                 <label for="niños">Cantidad de niños </label>
                 <input type="number" name="niños" id="niños" placeholder="Cantidad"/>
 
-                <label for="checkin" >checkin</label>
-                <input type="text" name="checkin" id="checkin" placeholder="Check In" required />
+                <label for="checkin" >Check in</label>
+                <input type="text" name="Check in" id="checkin" placeholder="Check In" required />
 
-                <label for="checkout">Asunto</label>
-                <input type ="text" name="checkout" id="checkout" placeholder="Check Out"/>
+                <label for="checkout">check out</label>
+                <input type ="text" name="check out" onClick={ReservaHome} id="checkout" placeholder="Check Out"/>
 
                 <input type="submit" name="enviar" value="Reservar"/>
             </form>
@@ -41,6 +60,5 @@ const Home = () => {
 
     );
 }
-
 
 export default Home;

@@ -10,6 +10,7 @@
     "dom": "^0.0.3",
     "leaflet": "^1.9.3",
     "react": "^18.2.0",
+    "react-big-calendar": "^1.6.9",
     "react-bootstrap": "^2.6.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.39.4",
@@ -19,6 +20,7 @@
     "react-scripts": "5.0.1",
     "sweetalert": "^2.1.2",
     "sweetalert2": "^11.6.14",
+    "tw-daterange": "^1.1.24",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -44,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
   }
 }
