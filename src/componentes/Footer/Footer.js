@@ -44,18 +44,18 @@ const Footer = () => {
                 <p>De los pinos 1111 (CP.7609) Mar de Cobo. Bs AS. Argentina.  //  RESERVAS TELEFÓNICAS: 0223-411-1111</p>
             </div>
             <div>
-            <div className="whatsapp">
-            <a className="btn-wsp" href="https://api.whatsapp.com/send?phone=11111111" role="button"><i
-                    className="whatsapp"><img src={whatsapp} alt="" /></i>
-                </a>
+                <div className="whatsapp">
+                    <a className="btn-wsp" href="https://api.whatsapp.com/send?phone=11111111" role="button"><i
+                        className="whatsapp"><img src={whatsapp} alt="" /></i>
+                    </a>
                 </div>
             </div>
 
 
         </div>
-        
+
     );
 }
 
-export default Footer; 
+export default Footer;
 
