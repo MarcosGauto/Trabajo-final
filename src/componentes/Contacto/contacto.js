@@ -39,7 +39,7 @@ const Contacto = () => {
                                 <textarea type="text" placeholder="Comentario" size="small" {...register("text", { require: true, minlength: 10 })} className="typetext">
                                 </textarea>
                             </div>
-                            <label> Tipo de cabaña</label>
+                            <label for="Cabañas"> Tipo de cabaña</label>
                             <select className="tipocab">
                                 <option value="cab1"> Cabaña1</option>
                                 <option value="cab2"> Cabaña2</option>
